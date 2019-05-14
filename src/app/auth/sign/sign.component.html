@@ -1,0 +1,74 @@
+<!-- <div class="row">
+  <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset1 col-md-offset-2">
+
+      <form (ngSubmit)="onSignup(f)" #f="ngForm">
+          <div class="form-group">
+            <label for="email">Mail</label>
+            <input type="email" id="email" name="email"ngModel class="form-control">
+        
+        
+        
+          </div>
+          <div class="form-group">
+              <label for="password">password</label>
+              <input type="password" id="password" name="password"ngModel class="form-control">
+              
+          
+          
+            </div>
+            <button class="btn btn-primary" type="submit">Sign up</button>
+        </form>
+  </div> 
+
+</div> -->
+
+
+<div class="container">
+	<div class="row">
+		<div class="form-box">
+        <h1>טופס <span>הרשמה</span></h1>
+        <form (ngSubmit)="onSignup(f)" #f="ngForm" role="form" id="contact-form">
+    	    
+            <!-- name field -->
+                <div class="form-group">
+                <div id="nameError" class="alert" role="alert"></div>
+                <label for="form-name-field" class="sr-only">שם משתמש</label>
+                    <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                        <input type="name" id="name" name="name"ngModel class="form-control" placeholder="שם משתשמש">
+                       
+                    </div>
+                </div>
+            <!-- email field -->
+                <div class="form-group">
+                <div id="emailError" class="alert" role="alert"></div>
+                <label for="form-email-field" class="sr-only">Email</label>
+                    <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+                        <input type="email" id="email" name="email"ngModel class="form-control" placeholder="דואר אלקטרוני">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div id="phoneError" class="alert" role="alert"></div>
+                    <label for="form-phone-field" class="sr-only">Phone</label>
+                        <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-phone"></span></div>
+                            <input type="password" id="password" name="password"ngModel class="form-control" placeholder="סיסמה">
+                            
+                        </div>
+                    </div>
+            <!-- phone field -->
+                <div class="form-group">
+                <div id="phoneError" class="alert" role="alert"></div>
+                <label for="form-phone-field" class="sr-only">Phone</label>
+                    <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-phone"></span></div>
+                        <input type="phone" id="phone" name="phone"ngModel class="form-control" placeholder="מספר טלפון">
+                    </div>
+                </div>
+           
+                <button class="btn btn-primary" type="submit">יצירת משתמש</button>
+    	    </form>   
+		</div>
+	</div>
+</div>
